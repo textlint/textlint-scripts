@@ -1,5 +1,7 @@
 # textlint-scripts [![Build Status](https://travis-ci.org/textlint/textlint-scripts.svg?branch=master)](https://travis-ci.org/textlint/textlint-scripts)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/textlint/textlint-scripts.svg)](https://greenkeeper.io/)
+
 textlint npm-run-scripts CLI help to create textlint rule.
 
 ## Install
