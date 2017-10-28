@@ -41,7 +41,6 @@ One more bugs`,
                     column: 13
                 }
             ]
-        },
-
+        }
     ]
 });

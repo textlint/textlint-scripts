@@ -16,7 +16,10 @@
     "textlint-scripts": "./bin/cmd.js"
   },
   "scripts": {
-    "test": "bash test/test-example.sh"
+    "test": "bash test/test-example.sh",
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css}'",
+    "precommit": "lint-staged",
+    "postcommit": "git reset"
   },
   "keywords": [
     "textlint"
@@ -29,7 +32,11 @@
     "url": "https://github.com/textlint/textlint-scripts/issues"
   },
   "homepage": "https://github.com/textlint/textlint-scripts",
-  "devDependencies": {},
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4"
+  },
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
@@ -39,5 +46,15 @@
     "mocha": "^4.0.1",
     "pkg-to-readme": "^1.1.0",
     "textlint-tester": "^3.0.1"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
