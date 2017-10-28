@@ -1,4 +1,5 @@
 "use strict";
+// See https://github.com/textlint/textlint/tree/master/packages/textlint-tester
 const TextLintTester = require("textlint-tester");
 const tester = new TextLintTester();
 // rule
