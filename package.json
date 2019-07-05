@@ -43,7 +43,7 @@
     "@babel/register": "^7.4.4",
     "confirmer": "^1.1.2",
     "cross-spawn": "^6.0.5",
-    "mocha": "^5.2.0",
+    "mocha": "^6.1.4",
     "pkg-to-readme": "^1.1.0",
     "textlint-tester": "^5.1.6"
   },
