@@ -3,14 +3,14 @@
 // Do this as the first thing so that any code reading it knows the right env.
 process.env.NODE_ENV = "production";
 
-var spawn = require("cross-spawn");
-var args = process.argv.slice(2);
-var babel = require.resolve(".bin/babel");
-var babelrc = require("../configs/babelrc");
+const spawn = require("cross-spawn");
+const args = process.argv.slice(2);
+const babel = require.resolve(".bin/babel");
+const babelConfigFilePath = require.resolve("../configs/babel.config");
 // babel src --out-dir lib --watch --source-maps
-var child = spawn(
+const child = spawn(
     babel,
-    ["--presets", babelrc.presets.join(","), "--source-maps", "--out-dir", "lib", "src"].concat(args)
+    ["--config-file", babelConfigFilePath, "--source-maps", "--out-dir", "lib", "src"].concat(args)
 );
 child.stderr.on("data", function(data) {
     process.stderr.write(data);
