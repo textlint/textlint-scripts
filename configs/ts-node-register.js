@@ -13,6 +13,13 @@ if (!useTypeScript) {
 
 ts register mode require tsconfig.json.`);
 }
+try {
+    require.resolve("ts-node");
+} catch (error) {
+    throw new Error(`ts-node is required
+
+You should install ts-node and typescript.`);
+}
 require("ts-node").register({
     project: paths.appTsConfig
 });
