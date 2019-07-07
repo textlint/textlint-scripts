@@ -21,8 +21,11 @@ cd(exampleDir);
 exec("npm install");
 exec("npm test");
 exec("npm run build");
-
+// example-ts
 cd(exampleTsDir);
 exec("npm install");
 exec("npm test");
 exec("npm run build");
+
+// exit
+shell.exit(0);
