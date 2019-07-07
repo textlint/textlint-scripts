@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "textlint-scripts build",
+    "test": "textlint-scripts test"
+  },
+  "dependencies": {
+    "prh": "^5.4.3"
+  },
+  "devDependencies": {
+    "textlint-scripts": "file:../",
+    "typescript": "^3.5.2",
+    "@textlint/types": "^1.1.5"
+  }
+}
