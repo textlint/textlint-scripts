@@ -4,4 +4,3 @@ node_js: "stable"
 os:
   - linux
   - windows
-  - osx
