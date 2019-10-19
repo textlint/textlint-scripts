@@ -1,7 +1,7 @@
 const fs = require("fs");
 const paths = require("../configs/paths");
 const useTypeScript = fs.existsSync(paths.appTsConfig);
-const NO_INLINE = process.env.NO_INLINE;
+const NO_INLINE = !!process.env.NO_INLINE;
 module.exports = {
     presets: [
         [
