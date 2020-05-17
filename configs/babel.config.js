@@ -7,6 +7,11 @@ module.exports = {
         [
             "@babel/env",
             {
+                "useBuiltIns": "usage",
+                "corejs": {
+                    "version": 3,
+                    "proposals": true
+                },
                 // For async/await support
                 // https://babeljs.io/docs/en/babel-preset-env#targetsesmodules
                 targets: {

@@ -51,6 +51,9 @@
     "pkg-to-readme": "^1.1.0",
     "textlint-tester": "^5.1.15"
   },
+  "peerDependencies": {
+    "core-js": "3"
+  },
   "prettier": {
     "singleQuote": false,
     "printWidth": 120,
